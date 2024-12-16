@@ -1,0 +1,105 @@
+@import url('../variable.css');
+
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+.navbar-top {
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--navbar-color);
+}
+
+.logo, .nav-menu {
+    width: 180px;
+}
+
+.logo {
+    display: flex;
+    padding-left: 30px;
+    font-size: 30px;
+    font-weight: bold;
+    color: var(--logo-color);
+}
+.nav-menu {
+    width: 180px;
+    height: 100vh;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    background-color: var(--navbar-color);
+}
+.nav-menu ul {
+    padding-inline-start: 30px;
+    list-style-type: none;
+    color: var(--text-color);
+}
+.nav-menu li a,
+.nav-menu li span {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    margin-right: 8px;
+    padding: 10px 0px;
+    cursor: pointer;
+}
+.nav-menu li:hover {
+    cursor: pointer;
+}
+.nav-menu span{
+    margin-right: 5px;
+}
+.material-symbols-outlined.movie-icon {
+    margin-top: 5px;
+}
+
+
+
+.logo a {
+    text-decoration: none;
+    color: inherit;
+}
+.nav-menu ul li a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.btn-login, .btn-signup, .btn-profile, .btn-logout {
+    text-decoration: none;
+    cursor: pointer;
+    color: var(--text-color);
+    transition: 0.25s;
+    font-weight: 600;
+    border-radius: 15px;
+    padding: 10px;
+}
+.btn-logout {
+    background-color: var(--backgroud-color);
+}
+.btn-login {
+    margin: 10px;
+    position: relative;
+    border: 1px solid gray;
+}
+.btn-signup, .btn-profile {   
+    margin-right: 10px;
+    background-color: var(--logo-color);
+}
+.btn-login:hover, .btn-signup:hover {
+    cursor: pointer;
+}
+.btn-login:active, .btn-signup:active{
+    filter: brightness(0.3);
+}
+
+.nickname-message {
+    color: var(--text-color);
+    font-weight: bold;
+    margin-right: 10px;
+}
