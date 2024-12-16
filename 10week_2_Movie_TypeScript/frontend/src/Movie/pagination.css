@@ -1,0 +1,39 @@
+@import '../variable.css';
+
+.pagination-container {
+    position: fixed;
+    bottom: 20px;
+    left: calc(50% + 90px);
+    transform: translateX(-50%);
+
+    display: flex;
+    align-items: center;
+    gap: 15px;
+
+    background-color: rgba(0, 0, 0, 0.8);
+
+    padding: 10px 20px;
+    border-radius: 20px;
+
+    color: var(--text-color);
+}
+
+.pagination-button {
+    background-color: var(--logo-color);
+    border: none;
+    color: var(--text-color);
+    padding: 10px 15px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+.pagination-button:disabled {
+    background-color: var(--main-background-color);
+    cursor: not-allowed;
+}
+
+.pagination-info {
+    font-size: 16px;
+}
